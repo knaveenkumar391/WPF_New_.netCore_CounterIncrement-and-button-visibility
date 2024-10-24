@@ -1,0 +1,2 @@
+﻿1. button on click of button counter should increse with odd and even message should be displayed
+2. take onemore button based on odd num it should be hidden and collapse the space

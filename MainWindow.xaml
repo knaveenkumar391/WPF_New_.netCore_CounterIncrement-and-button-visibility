@@ -1,0 +1,18 @@
+﻿<Window x:Class="CounterProgramWithConditionalRendringWPF_using_core.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CounterProgramWithConditionalRendringWPF_using_core"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Height="150" Width="550" Background="LightGray">
+
+            <Button Command="{Binding IncrementCommand}" FontSize="20" Content="IncrementBtn"  Margin="5"/>
+            <TextBlock x:Name="CounterTxtBlock"  Text="{Binding IncrementTextBlk}"  FontSize="20" TextAlignment="Center"/>
+            <TextBlock x:Name="OddNumTxtBlock" Text="{Binding EvenOddTextBlk}"  FontSize="20" TextAlignment="Center"/>
+            <Button Content="Apearing Button" IsEnabled="{Binding IsbtnEnabled}" Visibility="{Binding IsCollapsed}" Command="{Binding ApearingBtn}"></Button>
+        </StackPanel>
+    </Grid>
+</Window>
